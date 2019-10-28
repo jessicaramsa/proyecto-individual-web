@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+h1, a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #fff;
+  width: 200px;
+  padding: 5px;
+  background-color: rgb(27, 188, 155);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(27, 188, 135);
+}

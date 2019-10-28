@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 .5em;
+}
+
+input {
+  border: none;
+  padding: .7em 0;
+}
+
+.azul, .azul input {
+  background-color: rgb(210, 234, 241);
+}
+
+#form-historia {
+  display: grid;
+  justify-content: center;
+  max-width: 90%;
+  padding: 1.7em 0;
+  grid-template-areas:  "uno uno uno uno uno uno"
+                        "dos dos dos dos dos dos"
+                        "tres tres tres tres cuatro cinco"
+                        "seis seis siete siete ocho ocho"
+                        "nueve nueve nueve diez diez once"
+                        "doce doce doce doce doce doce"
+                        "trece trece trece catorce catorce catorce"
+                        "quince quince quince quince quince quince"
+                        ". . guarda guarda guarda .";
+}
+
+#form-historia label {
+  margin-left: 5px;
+}
+
+#uno {
+  grid-area: uno;
+  padding: 10px;
+}
+#dos { grid-area: dos; }
+#tres { grid-area: tres; }
+#cuatro { grid-area: cuatro; }
+#cinco { grid-area: cinco; }
+#seis { grid-area: seis; }
+#siete { grid-area: siete; }
+#ocho { grid-area: ocho; }
+#nueve { grid-area: nueve; }
+#diez { grid-area: diez; }
+#once { grid-area: once; }
+#doce { grid-area: doce; }
+#trece { grid-area: trece; }
+#catorce { grid-area: catorce; }
+#quince { grid-area: quince; }
+
+#guardar {
+  grid-area: guarda;
+  border: 1px;
+  background-color: rgb(36, 207, 92);
+  width: 250px;
+  margin: 15px 0;
+  justify-self: center;
+  align-self: center;
+}
+
+#guardar:hover {
+  border: 1px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(25, 144, 64);
+}
+
+#eliminar {
+  grid-area: guarda;
+  border: 1px;
+  background-color: rgb(228, 6, 6);
+  width: 250px;
+  margin: 15px 0;
+  justify-self: center;
+  align-self: center;
+}
+
+#eliminar:hover {
+  color: #fff;
+  border: 1px;
+  cursor: pointer;
+  background-color: rgb(184, 6, 6);
+}
+
+#container-header {
+  display: grid;
+  max-width: 75%;
+  grid-template-areas:  "titulo titulo logo";
+  margin: 0;
+  padding: 0;
+}
+
+#titulo {
+  grid-area: titulo;
+  margin-top: 5px;
+  justify-self: end;
+  align-self: center;
+}
+
+#logo {
+  grid-area: logo;
+  max-width: 130px;
+  justify-self: end;
+}
+
+/* Consultar historias clínicas */
+#historias {
+  display: grid;
+  margin: 5px;
+  padding: 10px;
+  font-weight: normal;
+  justify-content: center;
+}
+
+#titulo_lista {
+  grid-area: span 1 / span 1;
+  justify-self: center;
+  margin: 10px 0;
+}
+
+#buscador form {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: end;
+}
+
+#param {
+  padding: 4px;
+  width: 200px;
+  border: 1px solid rgb(45, 117, 139);
+}
+
+#submit_buscar {
+  margin: 0 10px;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background-color: rgb(57, 149, 177);
+}
+
+#submit_buscar:hover {
+  cursor: pointer;
+  background-color: rgb(45, 117, 139);
+}
+
+#tabla_historias, td, th {
+  border-collapse: collapse;
+  border: 2px solid rgb(83, 204, 241);
+  padding: 5px;
+  font-weight: normal;
+}
+
+#tabla_historias th {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(45, 117, 139);
+  border: 2px solid rgb(11, 125, 160);
+}
+
+#editar_button {
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+  color: #fff;
+  background-color: rgb(36, 207, 92);
+}
+
+#editar_button:hover {
+  cursor: pointer;
+  background-color: rgb(25, 144, 64);
+}
+
+#borrar_button {
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+  color: #fff;
+  background-color: rgb(228, 6, 6);
+}
+
+#borrar_button:hover {
+  cursor: pointer;
+  background-color: rgb(184, 6, 6);
+}
