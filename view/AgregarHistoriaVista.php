@@ -41,10 +41,10 @@ if (!$_SESSION['login']) {
       <div id="cuatro">
         <label for="genero">Género:</label>
         <select name="genero" id="genero">
+          <option value="" disabled selected>Selecciona tu género</option>
           <option value="M">Masculino</option>
           <option value="F">Femenino</option>
         </select>
-        <!-- <input type="text" name="genero" id="genero" maxlength="1"> -->
       </div>
       <div id="cinco">
         <label for="edad">Edad:</label>

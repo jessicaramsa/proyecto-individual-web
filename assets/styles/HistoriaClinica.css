@@ -44,9 +44,14 @@ input {
   grid-area: uno;
   padding: 10px;
 }
+
 #dos { grid-area: dos; }
 #tres { grid-area: tres; }
-#cuatro { grid-area: cuatro; }
+#cuatro {
+  grid-area: cuatro;
+  align-self: center;
+}
+
 #cinco { grid-area: cinco; }
 #seis { grid-area: seis; }
 #siete { grid-area: siete; }

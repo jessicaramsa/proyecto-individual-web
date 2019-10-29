@@ -53,7 +53,7 @@ if (!$_SESSION['login']) {
       <input type="hidden" name="id" id="id" value="<?php echo $response['id'];?>">
       <div class="azul" id="dos">
         <label for="fecha_elaboracion">Fecha de elaboración:</label>
-        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" value="<?php echo $response['fecha_elaboracion'];?>">
+        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" value="<?php echo $response['fecha_elaboracion'];?>" require>
       </div>
       <div id="tres">
         <label for="nombre">Nombre:</label>
@@ -62,10 +62,10 @@ if (!$_SESSION['login']) {
       <div id="cuatro">
         <label for="genero">Género:</label>
         <select name="genero" id="genero">
-          <option value="M">Masculino</option>
-          <option value="F">Femenino</option>
+          <option value="" disabled selected>Selecciona tu género</option>
+          <option value="M" <?php (($response['genero'] == 'M') ? 'echo "selected";' : "")?>>Masculino</option>
+          <option value="F" <?php (($response['genero'] == 'F') ? 'echo "selected";' : "")?>>Femenino</option>
         </select>
-        <!-- <input type="text" name="genero" id="genero" maxlength="1" value="<?php echo $response['genero'];?>"> -->
       </div>
       <div id="cinco">
         <label for="edad">Edad:</label>

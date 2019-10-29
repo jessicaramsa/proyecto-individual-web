@@ -33,4 +33,4 @@ create table usuarios(
 insert into usuarios(nombre, primer_apellido, segundo_apellido, username, email, password, rol) 
     values('Jéssica', 'Ramírez', 'Sánchez', 'jessicaramsa', 'jessicaramsa@gmail.com', '123', 'Administrador');
 insert into usuarios(nombre, primer_apellido, segundo_apellido, username, email, password, rol) 
-    values('Prueba', 'Uno', 'Dos', 'pruebas', 'pruebas@gmail.com', 'una_facil', 'Consultas');
+    values('Jéssica', 'Ramírez', 'Sánchez', 'pruebas', 'pruebas@gmail.com', 'una_facil', 'Consultas');
