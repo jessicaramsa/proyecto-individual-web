@@ -32,11 +32,11 @@ if (!$_SESSION['login']) {
       </center>
       <div class="azul" id="dos">
         <label for="fecha_elaboracion">Fecha de elaboración:</label>
-        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion">
+        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" required>
       </div>
       <div id="tres">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" maxlength="100">
+        <input type="text" name="nombre" id="nombre" maxlength="100" required>
       </div>
       <div id="cuatro">
         <label for="genero">Género:</label>

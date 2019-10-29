@@ -53,18 +53,28 @@ if (!$_SESSION['login']) {
       <input type="hidden" name="id" id="id" value="<?php echo $response['id'];?>">
       <div class="azul" id="dos">
         <label for="fecha_elaboracion">Fecha de elaboración:</label>
-        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" value="<?php echo $response['fecha_elaboracion'];?>" require>
+        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" value="<?php echo $response['fecha_elaboracion'];?>" required>
       </div>
       <div id="tres">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" maxlength="100" value="<?php echo $response['nombre'];?>">
+        <input type="text" name="nombre" id="nombre" maxlength="100" value="<?php echo $response['nombre'];?>" required>
       </div>
       <div id="cuatro">
         <label for="genero">Género:</label>
         <select name="genero" id="genero">
           <option value="" disabled selected>Selecciona tu género</option>
-          <option value="M" <?php (($response['genero'] == 'M') ? 'echo "selected";' : "")?>>Masculino</option>
-          <option value="F" <?php (($response['genero'] == 'F') ? 'echo "selected";' : "")?>>Femenino</option>
+          <?php
+          if ($response['genero'] == "M") {
+            echo '<option value="M" selected>Masculino</option>
+                  <option value="F">Femenino</option>';
+          } elseif ($response['genero'] == "F") {
+            echo '<option value="M">Masculino</option>
+                  <option value="F" selected>Femenino</option>';
+          } else {
+            echo '<option value="M">Masculino</option>
+                <option value="F">Femenino</option>';
+          }
+          ?>
         </select>
       </div>
       <div id="cinco">
