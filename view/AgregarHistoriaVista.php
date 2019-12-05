@@ -26,13 +26,13 @@ if (!$_SESSION['login']) {
     </div>
   </center>
   <div class="container">
-    <form action="../controllers/AgregarHistoriaControlador.php" method="post" id="form-historia">
+    <form action="../controllers/AgregarHistoriaControlador.php" method="post" id="form-historia" onsubmit="return validar(this)">
       <center id="uno">
         <h3>Ficha de identificación</h3>
       </center>
       <div class="azul" id="dos">
         <label for="fecha_elaboracion">Fecha de elaboración:</label>
-        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion" required>
+        <input type="date" name="fecha_elaboracion" id="fecha_elaboracion">
       </div>
       <div id="tres">
         <label for="nombre">Nombre:</label>
@@ -48,7 +48,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="cinco">
         <label for="edad">Edad:</label>
-        <input type="number" name="edad" id="edad" min="0">
+        <input type="number" name="edad" id="edad" min="0" max="100">
       </div>
       <div class="azul" id="seis">
         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
@@ -72,7 +72,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="once">
         <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" maxlength="10">
+        <input type="tel" name="telefono" id="telefono" minlength="10">
       </div>
       <div class="azul" id="doce">
         <label for="email">Email:</label>
@@ -84,7 +84,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="catorce">
         <label for="telefono_emergencia">Teléfono de emergencia:</label>
-        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" maxlength="10">
+        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" minlength="10">
       </div>
       <div class="azul" id="quince">
         <label for="persona_emergencia">Persona a quien contactar en caso de emergencia:</label>
@@ -93,5 +93,6 @@ if (!$_SESSION['login']) {
       <input type="submit" value="Guardar" id="guardar">
     </form>
   </div>
+  <script src="js/validacion.js"></script>
 </body>
 </html>

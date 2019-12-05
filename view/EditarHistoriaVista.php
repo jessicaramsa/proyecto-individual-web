@@ -79,7 +79,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="cinco">
         <label for="edad">Edad:</label>
-        <input type="number" name="edad" id="edad" min="0" value="<?php echo $response['edad'];?>">
+        <input type="number" name="edad" id="edad" min="0" max="100" value="<?php echo $response['edad'];?>">
       </div>
       <div class="azul" id="seis">
         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
@@ -103,7 +103,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="once">
         <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" maxlength="10" value="<?php echo $response['telefono'];?>">
+        <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10" value="<?php echo $response['telefono'];?>">
       </div>
       <div class="azul" id="doce">
         <label for="email">Email:</label>
@@ -115,7 +115,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="catorce">
         <label for="telefono_emergencia">Teléfono de emergencia:</label>
-        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" maxlength="10" value="<?php echo $response['telefono_emergencia'];?>">
+        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" minlength="10" maxlength="10" value="<?php echo $response['telefono_emergencia'];?>">
       </div>
       <div class="azul" id="quince">
         <label for="persona_emergencia">Persona a quien contactar en caso de emergencia:</label>
@@ -128,5 +128,6 @@ if (!$_SESSION['login']) {
       ?>
     </form>
   </div>
+  <script src="js/validacion.js"></script>
 </body>
 </html>
