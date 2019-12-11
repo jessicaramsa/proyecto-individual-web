@@ -72,7 +72,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="once">
         <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" minlength="10">
+        <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10">
       </div>
       <div class="azul" id="doce">
         <label for="email">Email:</label>
@@ -84,7 +84,7 @@ if (!$_SESSION['login']) {
       </div>
       <div id="catorce">
         <label for="telefono_emergencia">Teléfono de emergencia:</label>
-        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" minlength="10">
+        <input type="tel" name="telefono_emergencia" id="telefono_emergencia" minlength="10" maxlength="10">
       </div>
       <div class="azul" id="quince">
         <label for="persona_emergencia">Persona a quien contactar en caso de emergencia:</label>
